@@ -1,4 +1,4 @@
-// rotate an NXN matrix by 90 degrees clockwise in place by user input
+
 #include <stdio.h>
 
 int main() {
@@ -12,7 +12,6 @@ int main() {
             scanf("%d", &matrix[i][j]);
         }
     }
-    // Rotate the matrix by 90 degrees clockwise
     for (int x = 0; x < N / 2; x++) {
         for (int y = x; y < N - x - 1; y++) {
             int temp = matrix[x][y];
@@ -31,4 +30,5 @@ int main() {
     }   
                        
     return 0;
+
 }
